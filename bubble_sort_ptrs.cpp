@@ -1,4 +1,4 @@
-// Performs Binary search using pointers
+// Performs Bubble Sort using pointers
 
 #include "assignment.h"
 
