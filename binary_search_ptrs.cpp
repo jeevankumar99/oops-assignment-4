@@ -1,8 +1,6 @@
 // Performs Binary search using pointers
 
-#include <iostream>
-
-using namespace std;
+#include "assignment.h"
 
 void populate_array(int *ptr_array, int size_of_array);
 void sort_array(int *ptr_array, int size_of_array);
@@ -11,6 +9,8 @@ void print_array(int *ptr_array, int size_of_array);
 int main()
 {
     int size_of_array, temp;
+
+    assignment(2);
 
     cout << "Enter the size of the array: ";
     cin >> size_of_array;
@@ -32,10 +32,12 @@ int main()
 void print_array(int *ptr_array, int size_of_array)
 {
     // Print array.
+    cout << "[";
     for (int i = 0 ; i < size_of_array; i++)
     {
-        cout << *(ptr_array + i) << ", ";
+        cout << " " << *(ptr_array + i) << " ";
     }
+    cout << "]" << endl;
 }
 
 
@@ -43,7 +45,7 @@ void populate_array(int *ptr_array, int size_of_array)
 {
     for (int i = 0 ; i < size_of_array; i++)
     {
-        cout << "Element " << i << ":";
+        cout << "Element " << i << ": ";
         cin >> *(ptr_array + i);
     }
 }

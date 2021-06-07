@@ -1,12 +1,14 @@
 // Illustrate Dynamic Memory allocation using a 2d array and pointers
 
-#include <iostream>
+#include "assignment.h"
 
 using namespace std;
 
 int main()
 {
     int row, col;
+
+    assignment(1);
     
     // get size of rows and columns from user.
     cout << "Enter the number of rows: ";
